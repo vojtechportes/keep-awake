@@ -1,11 +1,11 @@
-import http from "https";
-import express from "express";
+const http = require("http");
+const express = require('express');
 
 const PATHS = process.env.PATHS.split("\n");
 
-setInterval(() => {
-    PATHS.forEach(url => {
-      http.get(url, () => {
+setInterval(function() {
+    PATHS.forEach(function() {
+      http.get(url, function() {
         console.log(`${url} called at ${new Date().toISOString()}`)
       });
     })
@@ -14,7 +14,7 @@ setInterval(() => {
 
 const app = express()
  
-app.get('/', () => {
+app.get('/', function() {
   res.send('Up and running!')
 })
  
