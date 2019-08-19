@@ -1,0 +1,12 @@
+{
+  "name": "keep-awake",
+  "private": true,
+  "author": "Vojtech Vaclav Portes",
+  "description": "Keep Awake",
+  "version": "1.0.0",
+  "repository": "https://github.com/vojtechportes/keep-awake.git",
+  "main": "index.js",
+  "scripts": {
+      "start": "node index.js"
+  }
+}
