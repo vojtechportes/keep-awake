@@ -2,6 +2,7 @@ const http = require("http");
 const express = require('express');
 
 const PATHS = process.env.PATHS.split("\n");
+const PORT = process.env.PORT || 3000;
 
 setInterval(function() {
     PATHS.forEach(function() {
@@ -18,4 +19,4 @@ app.get('/', function() {
   res.send('Up and running!')
 })
  
-app.listen(3000)
+app.listen(PORT)
