@@ -15,7 +15,7 @@ setInterval(function() {
 
 const app = express()
  
-app.get('/', function() {
+app.get('/', function(req, res) {
   res.send('Up and running!')
 })
  
