@@ -5,7 +5,7 @@ const PATHS = process.env.PATHS.split("\n");
 const PORT = process.env.PORT || 3000;
 
 setInterval(function() {
-    PATHS.forEach(function() {
+    PATHS.forEach(function(url) {
       http.get(url, function() {
         console.log(`${url} called at ${new Date().toISOString()}`)
       });
